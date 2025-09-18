@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package booking;
+
+// Сервис для управления бронированием
+service BookingService {
+  // Unary RPC: проверка доступности номера
+  rpc CheckAvailability (BookingRequest) returns (AvailabilityResponse) {}
+}
+
+// Сообщение-запрос для проверки доступности
+message BookingRequest {
+  string hotel_id = 1;   // Уникальный идентификатор отеля
+  string room_id = 2;    // Уникальный идентификатор номера в отеле
+}
+
+// Сообщение-ответ с информацией о доступности
+message AvailabilityResponse {
+  bool available = 1;          // Доступен ли номер сейчас
+  string message = 2;          // Сообщение для пользователя (e.g., "Номер свободен")
+  repeated TimeSlot booked_slots = 3;  // Список временных интервалов, когда номер занят
+}
+
+// Сообщение, представляющее временной интервал
+message TimeSlot {
+  string start_time = 1;  // Начало брони (e.g., "2024-05-20T14:00:00Z")
+  string end_time = 2;    // Окончание брони (e.g., "2024-05-25T11:00:00Z")
+}
