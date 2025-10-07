@@ -43,7 +43,8 @@
 
 # Архитектура
 
-<img width="792" height="654" alt="image" src="https://github.com/user-attachments/assets/3f821540-7295-46f5-8aef-bb7c003e7413" />
+<img width="828" height="702" alt="image" src="https://github.com/user-attachments/assets/f0f787e8-9b04-4e1b-be1c-607d52004cda" />
+
 
 
 # Технологический стек
