@@ -41,6 +41,11 @@
 
 • Какие данные (сообщения) эти методы принимают (BookingRequest) и возвращают (AvailabilityResponse).
 
+# Архитектура
+
+<img width="792" height="654" alt="image" src="https://github.com/user-attachments/assets/3f821540-7295-46f5-8aef-bb7c003e7413" />
+
+
 # Технологический стек
 *1.Язык определения интерфейсов (IDL):* Protocol Buffers (Protobuf)
 
